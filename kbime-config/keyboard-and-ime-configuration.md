@@ -433,13 +433,14 @@ After Windows VDA version **1912 CU2** and **2006**, Linux VDA **2012**, VDA con
 Most people use a 101 keyboard type. The 103 keyboard type, which supports two additional special keys, is used in Korea, and the 106 keyboard is used in Japan. The keyboard type is determined when a session starts.
 
 <figure>
-    <img src="KeyboardIME.assets/103korean-keyboard.png" alt="" title="103 Korean Keyboard"/>
     <figcaption style = "text-align: center;"><b>103 Korean Keyboard</b></figcaption>
+    <img src="KeyboardIME.assets/103korean-keyboard.png" alt="" title="103 Korean Keyboard"/>
 </figure>
-<br/>
+
+
 <figure>
-  	<img src="KeyboardIME.assets/106japanese-keyboard.png" alt="" title="106 Japanese Keyboard"/>
    	<figcaption style = "text-align: center;"><b>106 Japanese Keyboard</b></figcaption>
+  	<img src="KeyboardIME.assets/106japanese-keyboard.png" alt="" title="106 Japanese Keyboard"/>
 </figure>
 
 
