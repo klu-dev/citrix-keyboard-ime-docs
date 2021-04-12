@@ -4,7 +4,7 @@ This repo track, aggregate and update documents about all kinds of Citrix Keyboa
 
 It include the following documents:
 
-<a href="./kbime-config/Keyboard and IME Configuration.md">Keyboard and IME configuration in Citrix Virtual Apps and Desktops</a>
+<a href="./kbime-config/Keyboard-and-IME-Configuration.md">Keyboard and IME configuration in Citrix Virtual Apps and Desktops</a>
 
 
 
