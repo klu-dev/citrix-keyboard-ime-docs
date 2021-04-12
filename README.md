@@ -1,8 +1,10 @@
 # Citrix Keyboard and IME configuration documentation
 
-This is tracking document of all kinds of Citrix Keyboard and IME configuration for Citrix Virtual Apps and Desktops.
+This repo track, aggregate and update documents about all kinds of Citrix Keyboard and IME configuration for Citrix Virtual Apps and Desktops.
 
+It include the following documents
 
+[Keyboard and IME configuration in Citrix Virtual Apps and Desktops](./kbime-config/Keyboard and IME Configuration.md)
 
 # Reference
 
