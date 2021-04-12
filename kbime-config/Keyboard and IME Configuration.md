@@ -1,4 +1,51 @@
-[TOC]
+* [Citrix Virtual Apps and Desktops keyboard and IME configurations](#citrix-virtual-apps-and-desktops-keyboard-and-ime-configurations)
+* [Keyboard Synchronization Mode](#keyboard-synchronization-mode)
+  * [<span id="user\-content\-configmode1">Mode 1: Configure “Use VDA side default keyboard when logging in or reconnecting to the VDA” Mode</span>](#mode-1-configure-use-vda-side-default-keyboard-when-logging-in-or-reconnecting-to-the-vda-mode)
+    * [Configure in configuration file](#configure-in-configuration-file)
+    * [Configure in UI](#configure-in-ui)
+      * [Citrix Workspace app for Windows](#citrix-workspace-app-for-windows)
+    * [Configure in StoreFront](#configure-in-storefront)
+    * [Configure in group policy](#configure-in-group-policy)
+      * [Citrix Workspace app for Windows](#citrix-workspace-app-for-windows-1)
+  * [<span id="user\-content\-configmode2">Mode 2: Configure “Use specific keyboard when logging in or reconnecting to the VDA” Mode</span>](#mode-2-configure-use-specific-keyboard-when-logging-in-or-reconnecting-to-the-vda-mode)
+  * [<span id="user\-content\-configmode3">Mode 3: Configure “Only synchronize VDA side keyboard with client default keyboard when logging in or reconnecting to the VDA” Mode</span>](#mode-3-configure-only-synchronize-vda-side-keyboard-with-client-default-keyboard-when-logging-in-or-reconnecting-to-the-vda-mode)
+    * [Configure in configuration file](#configure-in-configuration-file-1)
+    * [Configure in UI](#configure-in-ui-1)
+      * [Citrix Workspace app for Windows](#citrix-workspace-app-for-windows-2)
+    * [Configure in StoreFront](#configure-in-storefront-1)
+    * [Configure in group policy](#configure-in-group-policy-1)
+      * [Citrix Workspace app for Windows](#citrix-workspace-app-for-windows-3)
+  * [<span id="user\-content\-configmode4">Mode 4: Configure “Synchronize VDA side keyboard with client keyboard dynamically in the VDA session” Mode</span>](#mode-4-configure-synchronize-vda-side-keyboard-with-client-keyboard-dynamically-in-the-vda-session-mode)
+    * [VDA configurations](#vda-configurations)
+      * [Configure in registry](#configure-in-registry)
+      * [Configure in Citrix group policy](#configure-in-citrix-group-policy)
+    * [Citrix Workspace app configurations](#citrix-workspace-app-configurations)
+      * [Configure in configuration file](#configure-in-configuration-file-2)
+      * [Configure in UI](#configure-in-ui-2)
+        * [Citrix Workspace app for Windows](#citrix-workspace-app-for-windows-4)
+        * [Citrix Workspace app for MAC](#citrix-workspace-app-for-mac)
+        * [Citrix Workspace app for Android](#citrix-workspace-app-for-android)
+        * [Citrix Workspace app for iOS](#citrix-workspace-app-for-ios)
+      * [Configure in StoreFront](#configure-in-storefront-2)
+      * [Configure in group policy](#configure-in-group-policy-2)
+        * [Citrix Workspace app for Windows](#citrix-workspace-app-for-windows-5)
+* [Non\-Windows Citrix Workspace app support](#non-windows-citrix-workspace-app-support)
+  * [<span id="user\-content\-configklmap">Enable Unicode Keyboard Layout Mapping for Windows VDA</span>](#enable-unicode-keyboard-layout-mapping-for-windows-vda)
+    * [Configure in registry](#configure-in-registry-1)
+    * [<span id="user\-content\-klmapgp">Configure in Citrix group policy</span>](#configure-in-citrix-group-policy-1)
+  * [Recommend configuration](#recommend-configuration)
+* [Generic Client IME for Chinese, Japanese, and Korean (CJK) Users](#generic-client-ime-for-chinese-japanese-and-korean-cjk-users)
+* [Touch Keyboard in Windows 10](#touch-keyboard-in-windows-10)
+* [Other Related Configurations](#other-related-configurations)
+  * [Show/Hide Remote Language Bar](#showhide-remote-language-bar)
+    * [Configure in UI](#configure-in-ui-3)
+      * [Citrix Workspace app for Windows](#citrix-workspace-app-for-windows-6)
+      * [Citrix Workspace app for MAC](#citrix-workspace-app-for-mac-1)
+  * [Show/Hide Keyboard Layout Switch Pup\-up Message Box](#showhide-keyboard-layout-switch-pup-up-message-box)
+    * [Configure in registry](#configure-in-registry-2)
+    * [<span id="user\-content\-msgpopupgp">Configure in Citrix group policy</span>](#configure-in-citrix-group-policy-2)
+* [101, 103 and 106 Keyboards](#101-103-and-106-keyboards)
+* [Appendix A\. Supported Keyboard Name](#appendix-a-supported-keyboard-name)
 
 # Citrix Virtual Apps and Desktops keyboard and IME configurations
 
@@ -32,7 +79,7 @@ Using mode [1](#mode1) and [2](#mode2) may cause inconsistency between the clien
 | Citrix Workspace app for iOS     | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with  client default keyboard when logging in or reconnecting to the VDA |
 | Citrix Workspace app for HTML5   | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with client default keyboard when logging in or reconnecting to the VDA |
 
-<span id = "table1">Table-1 Default Synchronization Mode for Citrix Workspace app</span>
+<span id = "table11">Table 1.1 Default Synchronization Mode for Citrix Workspace app</span>
 
 The sync mode supportability in different platform of Citrix Workspace app is below:
 
@@ -45,7 +92,7 @@ The sync mode supportability in different platform of Citrix Workspace app is be
 | Citrix Workspace app for iOS     |   No   |   No   |  Yes   |   No   |
 | Citrix Workspace app for HTML5   |   No   |   No   |  Yes   |   No   |
 
-<span id = "table2">Sync Mode Supportability in Different Platform of Citrix Workspace app</span>
+<span id = "table12">Table 1.2 Sync Mode Supportability in Different Platform of Citrix Workspace app</span>
 
 ## <span id="configmode1">Mode 1: Configure “Use VDA side default keyboard when logging in or reconnecting to the VDA” Mode</span>
 
@@ -62,7 +109,7 @@ This mode will not synchronize client keyboard layout to VDA-side when logging i
 | Citrix Workspace app for iOS           | Does not support configuration file                          |
 | Citrix Workspace app for HTML5         | Does not support configuration file                          |
 
-<span id = "table3">Table-3 `Use VDA side default keyboard` Mode in Local File Configuration</span>
+<span id = "table1111">Table 1.1.1.1 `Use VDA side default keyboard` Mode in Local File Configuration</span>
 
 ### Configure in UI
 
@@ -111,7 +158,7 @@ This mode isn’t supported by all Citrix Workspace app types, as shown in the f
 | Citrix Workspace app for iOS           | Yes                                                          |
 | Citrix Workspace app for HTML5         | Yes, but judge the client keyboard layout according to the current display language of the browser. |
 
-<span id = "table4">Citrix Workspace app Capability for `Only synchronize VDA side keyboard with client default keyboard when logging in or reconnecting to the VDA` Mode</span>
+<span id = "table131">Table 1.3.1 Citrix Workspace app Capability for `Only synchronize VDA side keyboard with client default keyboard when logging in or reconnecting to the VDA` Mode</span>
 
 ### Configure in configuration file
 
@@ -164,7 +211,7 @@ This mode will synchronize the client keyboard to the VDA side in the session ev
 | Windows VDA          | Default On for Windows Server 2012, Windows 10.  Default Off for Windows Server 2016 and Windows Server  2019. Need to add registry:  `HKLM\Software\Citrix\ICA\IcaIme\DisableKeyboardSync` value = DWORD 0     This setting enables client keyboard synchronization  dynamically and generic client IME. |
 | Linux VDA            | Default Off.  Enable client keyboard synchronization dynamically, run  the command:     `/opt/Citrix/VDA/bin/ctxreg update -k “HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Citrix\LanguageBar”  -v “SyncKeyboardLayout” -d “0x00000001”`     Enable generic client IME, run the command:     `/opt/Citrix/VDA/bin/ctxreg update -k  “HKEY_LOCAL_MACHINE\System\CurrentControlSet\Control\Citrix\LanguageBar” -v  “SyncClientIME” -d “0x00000001”` |
 
-<span id="table5">VDA Configuration for `Synchronize VDA side keyboard with client keyboard dynamically in VDA session` Mode</span>
+<span id="table14111">Table 1.4.1.1.1 VDA Configuration for `Synchronize VDA side keyboard with client keyboard dynamically in VDA session` Mode</span>
 
 
 
@@ -189,7 +236,7 @@ After Windows VDA version **1912 CU2** and **2006**, Linux VDA **2012**, VDA con
 | Citrix Workspace app for iOS           | Does not support configuration file.                         |
 | Citrix Workspace app for HTML5         | This mode is not supported.                                  |
 
-<span id="table6">CWA Configure for `Synchronize VDA side keyboard with client keyboard dynamically in VDA session` Mode</span>
+<span id="table14211">Table 1.4.2.1.1 CWA Configure for `Synchronize VDA side keyboard with client keyboard dynamically in VDA session` Mode</span>
 
 
 
@@ -197,7 +244,7 @@ After Windows VDA version **1912 CU2** and **2006**, Linux VDA **2012**, VDA con
 
 ##### Citrix Workspace app for Windows
 
-Open `Advanced Preferences` -> `Keyboard and Language bar` -> `Keyboard layout` page, `Allow dynamic sync` option after **version 2103** to replace setting in [configuration file](#table6).
+Open `Advanced Preferences` -> `Keyboard and Language bar` -> `Keyboard layout` page, `Allow dynamic sync` option after **version 2103** to replace setting in [configuration file](#table14211).
 
 ![image-cwa-dynamicsync](KeyboardIME.assets/image-cwa-dynamicsync.png)
 
