@@ -100,14 +100,14 @@ This mode will not synchronize client keyboard layout to VDA-side when logging i
 
 ### Configure in configuration file
 
-| <center>Citrix Workspace  app</center> | <center>Configuration</center>                               |
-| -------------------------------------- | ------------------------------------------------------------ |
-| Citrix Workspace app for Windows       | File path: `%appdata%\ICAClient\APPSRV.ini`  Change setting in `[WFClient]`: `KeyboardLayout=(Server  Default)` |
-| Citrix Workspace app for MAC           | File path: `~/Library/Application Support/Citrix  Receiver/Config`  Change setting in `[WFClient]`: `KeyboardLayout=(Server  Default)` |
-| Citrix Workspace app for Linux         | File path:  `~/.ICAClient/wfclient.ini`  Change setting in `[WFClient]`: `KeyboardLayout=(Server  Default)` |
-| Citrix Workspace app for Android       | Does not support configuration file                          |
-| Citrix Workspace app for iOS           | Does not support configuration file                          |
-| Citrix Workspace app for HTML5         | Does not support configuration file                          |
+| <center>Citrix Workspace app</center> | <center>Configuration</center>                               |
+| ------------------------------------- | ------------------------------------------------------------ |
+| Citrix Workspace app for Windows      | File path: `%appdata%\ICAClient\APPSRV.ini`  Change setting in `[WFClient]`: `KeyboardLayout=(Server  Default)` |
+| Citrix Workspace app for MAC          | File path: `~/Library/Application Support/Citrix  Receiver/Config`  Change setting in `[WFClient]`: `KeyboardLayout=(Server  Default)` |
+| Citrix Workspace app for Linux        | File path:  `~/.ICAClient/wfclient.ini`  Change setting in `[WFClient]`: `KeyboardLayout=(Server  Default)` |
+| Citrix Workspace app for Android      | Does not support configuration file                          |
+| Citrix Workspace app for iOS          | Does not support configuration file                          |
+| Citrix Workspace app for HTML5        | Does not support configuration file                          |
 
 <span id = "table1111">Table 1.1.1.1 `Use VDA side default keyboard` Mode in Local File Configuration</span>
 
@@ -149,7 +149,7 @@ This mode will synchronize the client keyboard layout to the VDA side once when 
 
 This mode isn’t supported by all Citrix Workspace app types, as shown in the following table:
 
-| <center>Citrix Workspace  app</center> | <center>Support</center>                                     |
+| <center>Citrix Workspace app</center> | <center>Support</center>                                     |
 | -------------------------------------- | ------------------------------------------------------------ |
 | Citrix Workspace app for Windows       | Yes                                                          |
 | Citrix Workspace app for MAC           | Yes                                                          |
@@ -227,7 +227,7 @@ After Windows VDA version **1912 CU2** and **2006**, Linux VDA **2012**, VDA con
 
 #### Configure in configuration file
 
-| <center>Citrix Workspace  app</center> | <center>Configuration</center>                               |
+| <center>Citrix Workspace app</center> | <center>Configuration</center>                               |
 | -------------------------------------- | ------------------------------------------------------------ |
 | Citrix Workspace app for Windows       | File path: `%appdata%\ICAClient\APPSRV.ini`  Change setting in `[WFClient]`: `LocalIME=1` or run command `wfica32.exe /localime:off` command from the Citrix Workspace app installation folder `C:\Program Files (x86)\Citrix\ICA Client`. Refer to [Generic client Input Method Editors (IME)](https://docs.citrix.com/en-us/citrix-workspace-app-for-windows/configure.html#generic-client-input-method-editors-ime). |
 | Citrix Workspace app for MAC           | Does not support configuration file.                         |
@@ -274,7 +274,7 @@ Select `Settings` -> `Keyboard Options` -> `Keyboard Layout Sync`.  Find more de
 
 **Only `Citrix Workspace app for Windows ` support StoreFront configuration**.
 
-| <center>Citrix Workspace  app</center> | Supported |
+| <center>Citrix Workspace app</center> | Supported |
 | :------------------------------------- | :-------: |
 | Citrix Workspace app for Windows       |    Yes    |
 | Citrix Workspace app for MAC           |    No     |
@@ -332,7 +332,7 @@ After Windows VDA version **1912 CU2** and **2006**, Linux VDA **2012**, VDA con
 
 ## Recommend configuration
 
-| <center>Citrix Workspace  app</center> | <center>Configuration</center>                               |
+| <center>Citrix Workspace app</center> | <center>Configuration</center>                               |
 | -------------------------------------- | ------------------------------------------------------------ |
 | Citrix Workspace app for MAC           | [Sync mode 4](#configmode4)  and [Enable Unicode Keyboard Layout Mapping](#configklmap) |
 | Citrix Workspace app for Linux         | [Sync mode 1](#configmode1) key input follow [rule 1](#rule1) which means that key input is determined by VDA side keyboard layout. |
@@ -373,14 +373,14 @@ Windows 10 has touch keyboard to support tablet mode. Users can switch the keybo
 
 You can hide the remote language bar with the following configurations:
 
-| Citrix Workspace  app            | Configuration                                                |
-| -------------------------------- | ------------------------------------------------------------ |
-| Citrix Workspace app for Windows | Refer to [Language Bar](https://docs.citrix.com/en-us/citrix-workspace-app-for-windows/configure.html#keyboard-layout-and-language-bar) |
-| Citrix Workspace app for MAC     | Refer to [Language Bar](https://docs.citrix.com/en-us/citrix-workspace-app-for-mac/configure.html#language-bar) |
-| Citrix Workspace app for Linux   | Not supported                                                |
-| Citrix Workspace app for Android | Not supported                                                |
-| Citrix Workspace app for iOS     | Not supported                                                |
-| Citrix Workspace app for HTML5   | Not supported                                                |
+| <center>Citrix Workspace app</center> | <center>Configuration</center>                               |
+| ------------------------------------- | ------------------------------------------------------------ |
+| Citrix Workspace app for Windows      | Refer to [Language Bar](https://docs.citrix.com/en-us/citrix-workspace-app-for-windows/configure.html#keyboard-layout-and-language-bar) |
+| Citrix Workspace app for MAC          | Refer to [Language Bar](https://docs.citrix.com/en-us/citrix-workspace-app-for-mac/configure.html#language-bar) |
+| Citrix Workspace app for Linux        | Not supported                                                |
+| Citrix Workspace app for Android      | Not supported                                                |
+| Citrix Workspace app for iOS          | Not supported                                                |
+| Citrix Workspace app for HTML5        | Not supported                                                |
 
 ### Configure in UI
 
@@ -447,59 +447,59 @@ Most people use a 101 keyboard type. The 103 keyboard type, which supports two a
 The following table shows how to configure Japanese 106 keyboard.
 
 
-| <center>Citrix Workspace  app</center> | <center>Japanese 106  Keyboard Support</center>              |
-| -------------------------------------- | ------------------------------------------------------------ |
-| Citrix Workspace app for Windows       | Support to **detect client keyboard type automatically when session  starts.** Or manually configure:  File path:  “%appdata%\ICAClient\WFCLIENT.ini”  Change setting in [WFClient]: KeyboardType=106 Keyboard  (Japanese) |
-| Citrix Workspace app for MAC           | File path: `~/Library/Application Support/Citrix  Receiver/Config`. Change setting in `[WFClient]`: `KeyboardType=106 Keyboard  (Japanese)` |
-| Citrix Workspace app for Linux         | File path:  `~/.ICAClient/wfclient.ini`. Change setting in `[WFClient]`: `KeyboardType=106 Keyboard  (Japanese)` |
-| Citrix Workspace app for Android       | Not supported                                                |
-| Citrix Workspace app for iOS           | Not supported                                                |
-| Citrix Workspace app for HTML5         | Not supported                                                |
+| <center>Citrix Workspace app</center> | <center>Japanese 106  Keyboard Support</center>              |
+| ------------------------------------- | ------------------------------------------------------------ |
+| Citrix Workspace app for Windows      | Support to **detect client keyboard type automatically when session  starts.** Or manually configure:  File path:  “%appdata%\ICAClient\WFCLIENT.ini”  Change setting in [WFClient]: KeyboardType=106 Keyboard  (Japanese) |
+| Citrix Workspace app for MAC          | File path: `~/Library/Application Support/Citrix  Receiver/Config`. Change setting in `[WFClient]`: `KeyboardType=106 Keyboard  (Japanese)` |
+| Citrix Workspace app for Linux        | File path:  `~/.ICAClient/wfclient.ini`. Change setting in `[WFClient]`: `KeyboardType=106 Keyboard  (Japanese)` |
+| Citrix Workspace app for Android      | Not supported                                                |
+| Citrix Workspace app for iOS          | Not supported                                                |
+| Citrix Workspace app for HTML5        | Not supported                                                |
 
 
 
 
 # Appendix A. Supported Keyboard Name
 
-| Keyboard Name in Configure File  | Windows  Keyboard Layout Identifier | Keyboard  Name in Windows 10                                |
-| -------------------------------- | ----------------------------------- | ----------------------------------------------------------- |
-| Belgian  Dutch                   | 0x00000813                          | Dutch  (Belgium)  Belgian  (Period) keyboard                |
-| Belgian  French                  | 0x0000080C                          | Dutch  (Belgium)  Belgian  French keyboard                  |
-| Brazilian  (ABNT)                | 0x00000416                          | Portuguese  (Brazil)  Portuguese  (Brazil ABNT) keyboard    |
-| British                          | 0x00000809                          | English  (United Kingdom)  United  Kingdom keyboard         |
-| Canadian  English (Multilingual) | 0x00001009                          | English  (Canada)  US  keyboard                             |
-| Canadian  French                 | 0x00000C0C                          | English  (Canada)  Canadian  French keyboard                |
-| Croatian                         | 0x0000041A                          | Croatian  (Croatia)  Standard  keyboard                     |
-| Czech                            | 0x00000405                          | Czech  Czech  keyboard                                      |
-| Danish                           | 0x00000406                          | Danish  Danish  keyboard                                    |
-| Dutch                            | 0x00000413                          | Dutch (Netherlands)  Dutch  keyboard                        |
-| Finnish                          | 0x0000040B                          | Finnish  Finnish  keyboard                                  |
-| French                           | 0x0000040C                          | French  (France)  French  Keyboard                          |
-| German                           | 0x00000407                          | German  (Germany)  German  keyboard                         |
-| Greek                            | 0x00000408                          | Greek  Greek  keyboard                                      |
-| Hungarian                        | 0x0000040E                          | Hungarian  Hungarian  keyboard                              |
-| Icelandic                        | 0x0000040F                          | Icelandic  Icelandic  keyboard                              |
-| Italian                          | 0x00000410                          | Italian  (Italy)  Italian  keyboard                         |
-| Italian  (142)                   | 0x00010410                          | Italian  (Italy)  Italian  (142) keyboard                   |
-| Japanese  (JIS)                  | 0xe00010410                         | Japanese  Microsoft  IME                                    |
-| Korean                           | 0xe00010412                         | Korean  Microsoft  IME                                      |
-| Latin  American                  | 0x0000080A                          | Spanish  (Mexico)  Latin  Americon keyboard                 |
-| Norwegian                        | 0x00000414                          | Norwegian  (Bokmål)  Norwegian  keyboard                    |
-| Polish  (Programmers)            | 0x00000415                          | Polish  Polish  (Programmers) keyboard                      |
-| Polish  (214)                    | 0x00010415                          | Polish  Polish  (214) keyboard                              |
-| Portuguese                       | 0x00000816                          | Portuguese  (Portugal)  Portuguese  keyboard                |
-| Romanian                         | 0x00000418                          | Romanian  (Romania)  Romanian  (legacy) keyboard            |
-| Russian                          | 0x00000419                          | Russian  Russian  keyboard                                  |
-| Slovak                           | 0x0000041B                          | Slovak  Slovak  keyboard                                    |
-| Slovenian                        | 0x00000424                          | Slovenian  Slovenian  keyboard                              |
-| Spanish                          | 0x0000040A                          | Spanish  (Spain)  Spanish  keyboard                         |
-| Spanish  variation               | 0x0001040A                          | Spanish  (Spain)  Spanish  variation keyboard               |
-| Swedish                          | 0x0000041D                          | Swedish  (Sweden)  Swedish  keyboard                        |
-| Swiss  French                    | 0x0000100C                          | Fench  (France)  Swiss  French Keyboard                     |
-| Swiss  Geraman                   | 0x00000807                          | German  (Switzerland)  Swiss  German keyboard               |
-| Turkish  (F)                     | 0x0001041F                          | Turkish  Turkish  F keyboard                                |
-| Turkish  (Q)                     | 0x000041F                           | Turkish  Turkish  Q keyboard                                |
-| US                               | 0x00000409                          | English  (United States)  US  keyboard                      |
-| US-Dvorak                        | 0x00010409                          | English  (United States)  United  States-Dvorak keyboard    |
-| US-International                 | 0x00020409                          | Dutch  (Netherlands)  United  States-International keyboard |
+| <center>Keyboard Name in Configure File</center> | <center>Windows  Keyboard Layout Identifier</center> | <center>Keyboard  Name in Windows 10</center>               |
+| ------------------------------------------------ | ---------------------------------------------------- | ----------------------------------------------------------- |
+| Belgian  Dutch                                   | 0x00000813                                           | Dutch  (Belgium)  Belgian  (Period) keyboard                |
+| Belgian  French                                  | 0x0000080C                                           | Dutch  (Belgium)  Belgian  French keyboard                  |
+| Brazilian  (ABNT)                                | 0x00000416                                           | Portuguese  (Brazil)  Portuguese  (Brazil ABNT) keyboard    |
+| British                                          | 0x00000809                                           | English  (United Kingdom)  United  Kingdom keyboard         |
+| Canadian  English (Multilingual)                 | 0x00001009                                           | English  (Canada)  US  keyboard                             |
+| Canadian  French                                 | 0x00000C0C                                           | English  (Canada)  Canadian  French keyboard                |
+| Croatian                                         | 0x0000041A                                           | Croatian  (Croatia)  Standard  keyboard                     |
+| Czech                                            | 0x00000405                                           | Czech  Czech  keyboard                                      |
+| Danish                                           | 0x00000406                                           | Danish  Danish  keyboard                                    |
+| Dutch                                            | 0x00000413                                           | Dutch (Netherlands)  Dutch  keyboard                        |
+| Finnish                                          | 0x0000040B                                           | Finnish  Finnish  keyboard                                  |
+| French                                           | 0x0000040C                                           | French  (France)  French  Keyboard                          |
+| German                                           | 0x00000407                                           | German  (Germany)  German  keyboard                         |
+| Greek                                            | 0x00000408                                           | Greek  Greek  keyboard                                      |
+| Hungarian                                        | 0x0000040E                                           | Hungarian  Hungarian  keyboard                              |
+| Icelandic                                        | 0x0000040F                                           | Icelandic  Icelandic  keyboard                              |
+| Italian                                          | 0x00000410                                           | Italian  (Italy)  Italian  keyboard                         |
+| Italian  (142)                                   | 0x00010410                                           | Italian  (Italy)  Italian  (142) keyboard                   |
+| Japanese  (JIS)                                  | 0xe00010410                                          | Japanese  Microsoft  IME                                    |
+| Korean                                           | 0xe00010412                                          | Korean  Microsoft  IME                                      |
+| Latin  American                                  | 0x0000080A                                           | Spanish  (Mexico)  Latin  Americon keyboard                 |
+| Norwegian                                        | 0x00000414                                           | Norwegian  (Bokmål)  Norwegian  keyboard                    |
+| Polish  (Programmers)                            | 0x00000415                                           | Polish  Polish  (Programmers) keyboard                      |
+| Polish  (214)                                    | 0x00010415                                           | Polish  Polish  (214) keyboard                              |
+| Portuguese                                       | 0x00000816                                           | Portuguese  (Portugal)  Portuguese  keyboard                |
+| Romanian                                         | 0x00000418                                           | Romanian  (Romania)  Romanian  (legacy) keyboard            |
+| Russian                                          | 0x00000419                                           | Russian  Russian  keyboard                                  |
+| Slovak                                           | 0x0000041B                                           | Slovak  Slovak  keyboard                                    |
+| Slovenian                                        | 0x00000424                                           | Slovenian  Slovenian  keyboard                              |
+| Spanish                                          | 0x0000040A                                           | Spanish  (Spain)  Spanish  keyboard                         |
+| Spanish  variation                               | 0x0001040A                                           | Spanish  (Spain)  Spanish  variation keyboard               |
+| Swedish                                          | 0x0000041D                                           | Swedish  (Sweden)  Swedish  keyboard                        |
+| Swiss  French                                    | 0x0000100C                                           | Fench  (France)  Swiss  French Keyboard                     |
+| Swiss  Geraman                                   | 0x00000807                                           | German  (Switzerland)  Swiss  German keyboard               |
+| Turkish  (F)                                     | 0x0001041F                                           | Turkish  Turkish  F keyboard                                |
+| Turkish  (Q)                                     | 0x000041F                                            | Turkish  Turkish  Q keyboard                                |
+| US                                               | 0x00000409                                           | English  (United States)  US  keyboard                      |
+| US-Dvorak                                        | 0x00010409                                           | English  (United States)  United  States-Dvorak keyboard    |
+| US-International                                 | 0x00020409                                           | Dutch  (Netherlands)  United  States-International keyboard |
 
