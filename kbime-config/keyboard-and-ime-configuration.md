@@ -434,13 +434,12 @@ Most people use a 101 keyboard type. The 103 keyboard type, which supports two a
 
 <figure>
     <img src="KeyboardIME.assets/103korean-keyboard.png" alt="" title="103 Korean Keyboard"/>
-    <figcaption align = "center"><b>103 Korean Keyboard</b></figcaption>
+    <figcaption style = "text-align: center;"><b>103 Korean Keyboard</b></figcaption>
 </figure>
-
-
+<br/>
 <figure>
   	<img src="KeyboardIME.assets/106japanese-keyboard.png" alt="" title="106 Japanese Keyboard"/>
-   	<figcaption align = "center"><b>106 Japanese Keyboard</b></figcaption>
+   	<figcaption style = "text-align: center;"><b>106 Japanese Keyboard</b></figcaption>
 </figure>
 
 
