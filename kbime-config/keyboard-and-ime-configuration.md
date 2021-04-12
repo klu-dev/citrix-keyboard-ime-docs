@@ -70,27 +70,27 @@ All four synchronization modes are exclusive, and individual clients can only wo
 
 Using mode [1](#mode1) and [2](#mode2) may cause inconsistency between the client keyboard and the VDA-side keyboard. For example, the client-side keyboard might display the German keyboard icon, but the VDA side might display the English keyboard icon. **Mode [1](#mode1) and [2](#mode2) normally are used in deployments that use only one kind of keyboard layout and where the client side does not need to change the keyboard layout**. For Windows OS, the VDA side default keyboard depends on the Windows OS language, the current user profile setting, and the Windows OS configurations. The keyboard layout in VDA is unknown in mode [1](#mode1), and using this mode is not recommended.
 
-| <center>Client</center>          | <center>Default Synchronization Mode</center>                |
-| :------------------------------- | :----------------------------------------------------------- |
-| Citrix Workspace app for Windows | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with client default keyboard when logging in or reconnecting to the VDA |
-| Citrix Workspace app for Mac     | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with  client default keyboard when logging in or reconnecting to the VDA |
-| Citrix Workspace app for Linux   | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with  client default keyboard when logging in or reconnecting to the VDA |
-| Citrix Workspace app for Android | [**Mode 1**](#mode1): Use VDA side default keyboard          |
-| Citrix Workspace app for iOS     | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with  client default keyboard when logging in or reconnecting to the VDA |
-| Citrix Workspace app for HTML5   | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with client default keyboard when logging in or reconnecting to the VDA |
+| <center>Citrix Workspace app</center> | <center>Default Synchronization Mode</center>                |
+| :------------------------------------ | :----------------------------------------------------------- |
+| Citrix Workspace app for Windows      | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with client default keyboard when logging in or reconnecting to the VDA |
+| Citrix Workspace app for Mac          | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with  client default keyboard when logging in or reconnecting to the VDA |
+| Citrix Workspace app for Linux        | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with  client default keyboard when logging in or reconnecting to the VDA |
+| Citrix Workspace app for Android      | [**Mode 1**](#mode1): Use VDA side default keyboard          |
+| Citrix Workspace app for iOS          | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with  client default keyboard when logging in or reconnecting to the VDA |
+| Citrix Workspace app for HTML5        | [**Mode 3**](#mode3): Only synchronize VDA side keyboard with client default keyboard when logging in or reconnecting to the VDA |
 
 <span id = "table11">Table 1.1 Default Synchronization Mode for Citrix Workspace app</span>
 
 The sync mode supportability in different platform of Citrix Workspace app is below:
 
-| <center>Client</center>          | Mode 1 | Mode 2 | Mode 3 | Mode 4 |
-| :------------------------------- | :----: | :----: | :----: | :----: |
-| Citrix Workspace app for Windows |  Yes   |  Yes   |  Yes   |  Yes   |
-| Citrix Workspace app for Mac     |  Yes   |  Yes   |  Yes   |  Yes   |
-| Citrix Workspace app for Linux   |  Yes   |  Yes   |  Yes   |  Yes   |
-| Citrix Workspace app for Android |  Yes   |   No   |   No   |  Yes   |
-| Citrix Workspace app for iOS     |   No   |   No   |  Yes   |   No   |
-| Citrix Workspace app for HTML5   |   No   |   No   |  Yes   |   No   |
+| <center>Citrix Workspace app</center> | Mode 1 | Mode 2 | Mode 3 | Mode 4 |
+| :------------------------------------ | :----: | :----: | :----: | :----: |
+| Citrix Workspace app for Windows      |  Yes   |  Yes   |  Yes   |  Yes   |
+| Citrix Workspace app for Mac          |  Yes   |  Yes   |  Yes   |  Yes   |
+| Citrix Workspace app for Linux        |  Yes   |  Yes   |  Yes   |  Yes   |
+| Citrix Workspace app for Android      |  Yes   |   No   |   No   |  Yes   |
+| Citrix Workspace app for iOS          |   No   |   No   |  Yes   |   No   |
+| Citrix Workspace app for HTML5        |   No   |   No   |  Yes   |   No   |
 
 <span id = "table12">Table 1.2 Sync Mode Supportability in Different Platform of Citrix Workspace app</span>
 
