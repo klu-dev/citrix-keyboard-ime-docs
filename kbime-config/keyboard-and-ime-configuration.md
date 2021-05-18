@@ -145,7 +145,7 @@ This mode also supports the [file configuration](#Configure-in-configuration-fil
 
 ## <span id="configmode3">Mode 3: Configure “Only synchronize VDA side keyboard with client default keyboard when logging in or reconnecting to the VDA” Mode</span>
 
-This mode will synchronize the client keyboard layout to the VDA side once when logging in or reconnecting to the VDA. This mode also support the [file configuration]((#Configure-in-configuration-file))  and  [StoreFront configuration](#Configure-in-StoreFront).
+This mode will synchronize the client keyboard layout to the VDA side once when logging in or reconnecting to the VDA. This mode also support the [file configuration](#Configure-in-configuration-file)  and  [StoreFront configuration](#Configure-in-StoreFront).
 
 This mode isn’t supported by all Citrix Workspace app types, as shown in the following table:
 
