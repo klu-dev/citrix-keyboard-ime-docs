@@ -139,7 +139,7 @@ Refer to [Keyboard layout and language bar](https://docs.citrix.com/en-us/citrix
 
 ## <span id="configmode2">Mode 2: Configure “Use specific keyboard when logging in or reconnecting to the VDA” Mode</span>
 
-This mode also supports the [file configuration](#Configure-in-configuration-file) and the [StoreFront configuration](#Configure-in-StoreFront). It uses the same configuration item in the [file configuration](#Configure-in-configuration-file). Users can set the specific keyboard layout listed in [Appendix A](#Appendix-A.-Supported-Keyboard-Name). For example, set the specific keyboard to “French” in the configure file when logging in or reconnecting to the VDA and change the setting in `[WFClient]`: `KeyboardLayout=French`.
+This mode also supports the [file configuration](#Configure-in-configuration-file) and the [StoreFront configuration](#Configure-in-StoreFront). It uses the same configuration item in the [file configuration](#Configure-in-configuration-file). Users can set the specific keyboard layout listed in [Appendix A](#Appendix-A-Supported-Keyboard-Name). For example, set the specific keyboard to “French” in the configure file when logging in or reconnecting to the VDA and change the setting in `[WFClient]`: `KeyboardLayout=French`.
 
 
 
