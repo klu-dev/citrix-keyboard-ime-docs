@@ -449,7 +449,7 @@ The following table shows how to configure Japanese 106 keyboard.
 
 | <center>Citrix Workspace app</center> | <center>Japanese 106  Keyboard Support</center>              |
 | ------------------------------------- | ------------------------------------------------------------ |
-| Citrix Workspace app for Windows      | Support to **detect client keyboard type automatically when session  starts.** Or manually configure:  File path:  “%appdata%\ICAClient\WFCLIENT.ini”  Change setting in [WFClient]: KeyboardType=106 Keyboard  (Japanese) |
+| Citrix Workspace app for Windows      | Support to **detect client keyboard type automatically when session  starts.** Or manually configure:  File path:  “%appdata%\ICAClient\APPSRV.INI”  Change setting in [WFClient]: KeyboardType=106 Keyboard  (Japanese) |
 | Citrix Workspace app for MAC          | File path: `~/Library/Application Support/Citrix  Receiver/Config`. Change setting in `[WFClient]`: `KeyboardType=106 Keyboard  (Japanese)` |
 | Citrix Workspace app for Linux        | File path:  `~/.ICAClient/wfclient.ini`. Change setting in `[WFClient]`: `KeyboardType=106 Keyboard  (Japanese)` |
 | Citrix Workspace app for Android      | Not supported                                                |
